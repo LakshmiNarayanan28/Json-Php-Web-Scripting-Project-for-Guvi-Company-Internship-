@@ -1,0 +1,176 @@
+.button{
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+ 
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:5%;
+  margin-bottom:0%
+}
+a{
+color: White;
+text-decoration: none;
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.cock {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.cock:focus {
+  border: 3px solid green;
+}
+
+.button1{
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+ color: White;
+  
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:5%;
+  margin-bottom:0%
+}
+
+.button2{
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+ color: White;
+  
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  margin-top:5%;
+  margin-bottom:0%
+}
+.textarea {
+
+ width: 400px;
+ height: 250px;
+ font: normal 17px monospace;
+ font-style: oblique;
+ line-height: 25px;
+ padding: 2px 10px;
+ border: solid 9px Green ;
+ background-color: white ;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+table{
+		width:700px;
+		border-collapse:collapse;
+	}
+	table td,table th{
+		border:2px solid cyan grey;
+		padding:9px;
+	}
+	
+	
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 green;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background:olive;
+  color: black;
+  z-index: 2;
+}
+
+.flip-card-back {
+  background-color:	lime;
+  color: black;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.blinking{
+    animation:blinkingText 0.9s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: white;    }
+    49%{    color: transparent; }
+    50%{    color: white; }
+    99%{    color: transparent;  }
+    100%{   color: white;    }
+}
